@@ -1,0 +1,58 @@
+@use "../abstract/keyframes";
+@use "../abstract/variable" as var;
+@use "../abstract/mixin.scss";
+
+@font-face {
+    font-family: roboto;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../font/Roboto/Roboto-Black.ttf);
+    font-weight: 800;
+}
+
+
+body {
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+// responsive
+.responsive_container {
+    max-width: 1820px;
+    height: 80%;
+}
+////////////////////////
+
+section {
+    height: 70rem;
+    @include mixin.flex;
+}
+
+a {
+    transition: .3s ease;
+    display: inline-block;
+    color: var.$color-nav;
+
+    &:hover {
+        color: var.$colorHoverH3;
+        transform: scale(1.1);
+        ;
+    }
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+span {
+    display: block;
+}
+
+p {
+    color: var.$colorText;
+}

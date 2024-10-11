@@ -1,0 +1,42 @@
+@use "../abstract/keyframes";
+@use "../abstract/variable" as var;
+@use "../abstract/mixin";
+
+#cards_container {
+
+    .responsive_container {
+        @include mixin.flex;
+        height: 100%;
+    }
+}
+
+    .cards {
+        @include mixin.flex(column);
+        width: 25%;
+        height: 80%;
+        gap: 2rem;
+        text-align: center;
+
+        .icons_cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15rem;
+            height: 25%;
+            border: 1px solid var.$colorTitle;
+            margin-bottom: 10px;
+
+            .fa-desktop,
+            .fa-flask,
+            .fa-compass-drafting,
+            .fa-sack-dollar {
+                font-size: 4rem;
+                color: var.$colorTitle;
+            }
+        }
+
+        p {
+            width: 60%;
+        }
+    }
+

@@ -1,0 +1,91 @@
+@use "../abstract/keyframes";
+@use "../abstract/variable" as var;
+@use "../abstract/mixin.scss";
+
+header {
+    @include mixin.flex(column, space-between, center);
+    height: 100vh;
+    position: relative;
+    background-image: url(../IMG/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(9, 9, 62);
+        opacity: 0.5;
+        z-index: 0;
+    }
+// disposition  générale header
+    ul {
+        @include mixin.flex;
+    }
+
+    .btn {
+        @include mixin.btn;
+        margin-top: 3rem;
+
+        &:hover {
+            border-color: var.$colorHoverH3;
+            color: var.$colorHoverH3;
+        }
+    }
+///////////////////////////////////
+    nav {
+        @include mixin.flex($justify: space-between);
+        width: 100%;
+        padding-top: 2rem;
+        z-index: 1;
+
+        h3 {
+            font-size: 4rem;
+            padding-left: 4rem
+        }
+
+        ul {
+            padding-right: 4rem;
+
+            li {
+                margin-left: 4rem;
+            }
+        }
+
+        .burger_focus {
+
+            .fa-bars {
+                display: none;
+            }
+        }
+    }
+
+    .header_title {
+        @include mixin.flex(column, center, flex-start);
+        height: 100%;
+        width: 100%;
+        gap: 1.5rem;
+        padding-left: 4rem;
+        padding-top: 3rem;
+        z-index: 1;
+
+        h2 {
+            font-size: 10rem;
+            font-weight: 1000;
+        }
+
+        ul {
+            margin-top: 3rem;
+
+            li {
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+

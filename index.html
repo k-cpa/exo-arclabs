@@ -14,21 +14,26 @@
         <nav>
             <div id="logo">
                 <a href=""><h3>ARCLABS</h3></a>
-            </div>      
-            <ul>    
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">PAGES</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>            
-            </ul>
+            </div>     
+            <div class="burger_focus">
+                <ul>    
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">PAGES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>            
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
         <!-- TITRE HEADER + BOUTONS / SOCIALS -->
         <div class="header_title">
             <h3>BUILDING FOR SOCIETY</h3>
             <h2>FUTURE <span>ARCHITECHURE</span></h2>
-            <a href="">View Project</a>
+            <div class="btn_header_title">
+                <a class="btn" href="">View Project</a>
+            </div>
             <ul>
                 <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
@@ -39,80 +44,94 @@
     <main>
         <!----------- SECTION CARDS----------->
         <section id="cards_container">
-            <article class="cards design_card">
-                <i class="fa-solid fa-compass-drafting"></i>
-                <h3>Creative Design</h3>
-                <p>Hac facilisii ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnifauc</p>
-            </article>
-            <article class="cards style_card">
-                <i class="fa-solid fa-desktop"></i>
-                <h3>Experienced Style</h3>
-                <p>Hac facilisii ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnifauc</p>
-            </article>
-            <article class="cards research_card">
-                <i class="fa-solid fa-flask"></i>
-                <h3>Product Research</h3>
-                <p>Hac facilisii ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnifauc</p>
-            </article>
-            <article class="cards price_card">
-                <i class="fa-solid fa-sack-dollar"></i>
-                <h3>Affordable Price</h3>
-                <p>Hac facilisii ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnifauc</p>
-            </article>
+            <div class="responsive_container">
+                <article class="cards design_card">
+                    <div class="icons_cards">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3>Creative Design</h3>
+                    <p>Hac facilisii ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnifauc</p>
+                </article>
+                <article class="cards style_card">
+                    <div class="icons_cards">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3>Experienced Style</h3>
+                    <p>Hac facilisii ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnifauc</p>
+                </article>
+                <article class="cards research_card">
+                    <div class="icons_cards">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3>Product Research</h3>
+                    <p>Hac facilisii ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnifauc</p>
+                </article>
+                <article class="cards price_card">
+                    <div class="icons_cards">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <h3>Affordable Price</h3>
+                    <p>Hac facilisii ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnifauc</p>
+                </article>
+            </div>
         </section>
 
         <!----------- SECTION ABOUT  ----------->
         <section id="about">
-            <article class="company">
-                <div class="img_abs">
-                    <img src="assets/IMG/about.png" alt="Photo d'un paysage urbain contemporain et moderne.">
-                </div>
-                <div class="about_elements">
-                    <h3>About us</h3>
-                    <h2>We are world <span>number one Company</span></h2>
-                    <p>Face make he light it moveth darkness winged eveni seas after life every gathering is forth two kind lesser i from seas him open him From creepeth after, life is above image from replenish behold great</p>
-                    <a href="">Read More</a>
-                </div>
-            </article>
+            <div class="responsive_container">
+                <article class="company">
+                    <div class="img_abs">
+                        <img src="assets/IMG/about.png" alt="Photo d'un paysage urbain contemporain et moderne.">
+                    </div>
+                    <div class="about_elements">
+                        <h3>About us</h3>
+                        <h2>We are world <span>number one Company</span></h2>
+                        <p>Face make he light it moveth darkness winged eveni seas after life every gathering is forth two kind lesser i from seas him open him From creepeth after, life is above image from replenish behold great</p>
+                        <a href="">Read More</a>
+                    </div>
+                </article>
+            </div>
         </section>
         <!-- SECTION PROJETS  -->
         <section id="project">
-            <div class="section_title project_title">
-                <h3>Recent Work</h3>
-                <h2>View Our Project</h2>
-            </div>
-            <ul>
-                <li><a href="">ALL</a></li>
-                <li><a href="">POPULAR</a></li>
-                <li><a href="">LATEST</a></li>
-                <li><a href="">FOLLOWING</a></li>
-                <li><a href="">UPCOMING</a></li>
-            </ul>
-        <!-- réfléchir si grid est ok ici car card NY en bas est plus courte. Voir comment faire pour gérer ça 
-         sinon possibilité de faire une div par ligne avec flex-column avec 2 sous-div avec flex-row -->
-            <div class="project_grid_container">
-                <div class="project_single_cards ny_top">
-                    <div class="ny_text">
-                        <span>Dell Villa, New York</span>
-                        <p>Architecture, Modern Design</p>
-                    </div>
+            <div class="responsive_container">
+                <div class="section_title project_title">
+                    <h3>Recent Work</h3>
+                    <h2>View Our Project</h2>
                 </div>
-                <div class="project_double_cards singapore">
-                    <div class="project_double_text singapore_text">
-                        <span>Eden Park, Singapore</span>
-                        <p>Architecture, Modern Design</p>
+                <ul>
+                    <li><a href="">ALL</a></li>
+                    <li><a href="">POPULAR</a></li>
+                    <li><a href="">LATEST</a></li>
+                    <li><a href="">FOLLOWING</a></li>
+                    <li><a href="">UPCOMING</a></li>
+                </ul>
+            <!-- réfléchir si grid est ok ici car card NY en bas est plus courte. Voir comment faire pour gérer ça 
+            sinon possibilité de faire une div par ligne avec flex-column avec 2 sous-div avec flex-row -->
+                <div class="project_grid_container">
+                    <div class="project_single_cards ny_top">
+                        <div class="ny_text">
+                            <span>Dell Villa, New York</span>
+                            <p>Architecture, Modern Design</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project_double_cards paris">
-                    <div class="project_double_text paris_text">
-                        <span>Sky Build, Paris</span>
-                        <p>Architecture, Modern Design</p>
+                    <div class="project_double_cards singapore">
+                        <div class="project_double_text singapore_text">
+                            <span>Eden Park, Singapore</span>
+                            <p>Architecture, Modern Design</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project_single_cards ny_bottom">
-                    <div class="ny_text">
-                        <span>Dell Villa, New York</span>
-                        <p>Architecture, Modern Design</p>
+                    <div class="project_double_cards paris">
+                        <div class="project_double_text paris_text">
+                            <span>Sky Build, Paris</span>
+                            <p>Architecture, Modern Design</p>
+                        </div>
+                    </div>
+                    <div class="project_single_cards ny_bottom">
+                        <div class="ny_text">
+                            <span>Dell Villa, New York</span>
+                            <p>Architecture, Modern Design</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,118 +144,123 @@
             <h2>View Our Project</h2>
         </section>
         <section id="testimony">
-            <div class="section_title testimony_title">
-                <h3>Testimonials</h3>
-                <h2>Happy Clients</h2>
+            <div class="responsive_container">
+                <div class="section_title testimony_title">
+                    <h3>Testimonials</h3>
+                    <h2>Happy Clients</h2>
+                </div>
+                <article class="cards_testimony_container">
+                    <div class="testimony_cards">
+                        <div class="testimony_img">
+                            <img src="assets/IMG/t1.png" alt="Portrait de Daniel Yarde, CEO et Founder de Arcrabs">
+                        </div>
+                        <div class="testimony_elements">
+                            <p>Give dry stars form Us called a nwon't winged had land cru abundantly land Midst</p>
+                            <h3>DANYEL YARDE</h3>
+                            <h4>CEO & Founder</h4>
+                        </div>
+                    </div>
+                    <div class="testimony_cards">
+                        <div class="testimony_img">
+                            <img src="assets/IMG/t2.png" alt="Portrait de Maniel Juice, CEO et Founder de Arclabs">
+                        </div>
+                        <div class="testimony_elements">
+                            <p>Give dry stars form Us called a nwon't winged had land cru abundantly land Midst</p>
+                            <h3>DANYEL YARDE</h3>
+                            <h4>CEO & Founder</h4>
+                        </div>
+                        <!-- Ajouter favicons pour dérouler les cards témoignages -->
+                    </div>
+                </article>
             </div>
-            <article class="cards_testimony_container">
-                <div class="testimony_cards">
-                    <div class="testimony_img">
-                        <img src="assets/IMG/t1.png" alt="Portrait de Daniel Yarde, CEO et Founder de Arcrabs">
-                    </div>
-                    <div class="testimony_elements">
-                        <p>Give dry stars form Us called a nwon't winged had land cru abundantly land Midst</p>
-                        <h3>DANYEL YARDE</h3>
-                        <h4>CEO & Founder</h4>
-                    </div>
-                </div>
-                <div class="testimony_cards">
-                    <div class="testimony_img">
-                        <img src="assets/IMG/t2.png" alt="Portrait de Maniel Juice, CEO et Founder de Arclabs">
-                    </div>
-                    <div class="testimony_elements">
-                        <p>Give dry stars form Us called a nwon't winged had land cru abundantly land Midst</p>
-                        <h3>DANYEL YARDE</h3>
-                        <h4>CEO & Founder</h4>
-                    </div>
-                    <!-- Ajouter favicons pour dérouler les cards témoignages -->
-                </div>
-            </article>
         </section>
         <section id="labels">
-            <article class="labels_container">
-                <div class="labels_img_wrapper">
-                    <img src="assets/IMG/b1.png" alt="labels de l'entreprise Arclabs">
-                </div>
-                <div class="labels_img_wrapper">
-                    <img src="assets/IMG/b2.png" alt="labels de l'entreprise Arclabs">
-                </div>
-                <div class="labels_img_wrapper">
-                    <img src="assets/IMG/b3.png" alt="labels de l'entreprise Arclabs">
-                </div>
-                <div class="labels_img_wrapper">
-                    <img src="assets/IMG/b4.png" alt="labels de l'entreprise Arclabs">
-                </div>
-                <div class="labels_img_wrapper">
-                    <img src="assets/IMG/b5.png" alt="labels de l'entreprise Arclabs">
-                </div>
-            </article>
+            <div class="responsive_container">
+                <article class="labels_container">
+                    <div class="labels_img_wrapper">
+                        <img src="assets/IMG/b1.png" alt="labels de l'entreprise Arclabs">
+                    </div>
+                    <div class="labels_img_wrapper">
+                        <img src="assets/IMG/b2.png" alt="labels de l'entreprise Arclabs">
+                    </div>
+                    <div class="labels_img_wrapper">
+                        <img src="assets/IMG/b3.png" alt="labels de l'entreprise Arclabs">
+                    </div>
+                    <div class="labels_img_wrapper">
+                        <img src="assets/IMG/b4.png" alt="labels de l'entreprise Arclabs">
+                    </div>
+                    <div class="labels_img_wrapper">
+                        <img src="assets/IMG/b5.png" alt="labels de l'entreprise Arclabs">
+                    </div>
+                </article>
+            </div>
         </section>
         <footer>
-            <!-- footer article en column  -->
-            <article id="links_news">
-                <!-- article "link_news" en row -->
-                <div class="links">
-                    <div class="top_products">
-                        <h4>Top Products</h4>
-                        <ul>
-                            <li><a href="">Managed Website</a></li>
-                            <li><a href="">Manage Reputation</a></li>
-                            <li><a href="">Power Tools</a></li>
-                            <li><a href="">Marketing Service</a></li>
-                        </ul>
+            <div class="responsive_container">
+                <!-- footer article en column  -->
+                <article id="links_news">
+                    <!-- article "link_news" en row -->
+                    <div class="links">
+                        <div class="top_products">
+                            <h4>Top Products</h4>
+                            <ul>
+                                <li><a href="">Managed Website</a></li>
+                                <li><a href="">Manage Reputation</a></li>
+                                <li><a href="">Power Tools</a></li>
+                                <li><a href="">Marketing Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="quick_links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="">Jobs</a></li>
+                                <li><a href="">Brand Assets</a></li>
+                                <li><a href="">Investor Relations</a></li>
+                                <li><a href="">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="features">
+                            <h4>Features</h4>
+                            <ul>
+                                <li><a href="">Jobs</a></li>
+                                <li><a href="">Brand Assets</a></li>
+                                <li><a href="">Investor Relations</a></li>
+                                <li><a href="">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="ressources">
+                            <h4>Ressources</h4>
+                            <ul>
+                                <li><a href="">Guides</a></li>
+                                <li><a href="">Research</a></li>
+                                <li><a href="">Experts</a></li>
+                                <li><a href="">Agencies</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="quick_links">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="">Jobs</a></li>
-                            <li><a href="">Brand Assets</a></li>
-                            <li><a href="">Investor Relations</a></li>
-                            <li><a href="">Terms of Service</a></li>
-                        </ul>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <p>You can trust us, we only send promo offers</p>
+                        <form>
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" autocomplete="email">
+                            <a href="">Subscribe</a>
+                        </form>
                     </div>
-                    <div class="features">
-                        <h4>Features</h4>
-                        <ul>
-                            <li><a href="">Jobs</a></li>
-                            <li><a href="">Brand Assets</a></li>
-                            <li><a href="">Investor Relations</a></li>
-                            <li><a href="">Terms of Service</a></li>
-                        </ul>
+                </article>
+                <article id="copyright_socials">
+                    <div class="copyright">
+                        <!-- Voir si un seul "p" est suffisant -->
+                        <p>Copyright 2019 All rights reserved This template is made with by <span>colorlib</span></p>
                     </div>
-                    <div class="ressources">
-                        <h4>Ressources</h4>
-                        <ul>
-                            <li><a href="">Guides</a></li>
-                            <li><a href="">Research</a></li>
-                            <li><a href="">Experts</a></li>
-                            <li><a href="">Agencies</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="newsletter">
-                    <h4>Newsletter</h4>
-                    <p>You can trust us, we only send promo offers</p>
-                    <form>
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Your Email Address" autocomplete="email">
-                        <a href="">Subscribe</a>
-                    </form>
-                </div>
-            </article>
-            <article id="copyright_socials">
-                <div class="copyright">
-                    <!-- Voir si un seul "p" est suffisant -->
-                    <p>Copyright 2019 All rights reserved This template is made with by <span>colorlib</span></p>
-                </div>
-                <!-- mettre favicons  -->
-                <ul>
-                    <li>FB</li>
-                    <li>FB</li>
-                    <li>FB</li>
-                    <li>FB</li>
-                </ul>
-            </article>
+                    <!-- mettre favicons  -->
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </article>
+            </div>
         </footer>
     </main>
 </body>
