@@ -30,6 +30,7 @@ body {
 section {
     height: 70rem;
     @include mixin.flex;
+    background-color: var.$colorBgSection;
 }
 
 // transition btn + socials

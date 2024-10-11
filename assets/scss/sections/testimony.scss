@@ -1,3 +1,38 @@
 @use "../abstract/keyframes";
 @use "../abstract/variable";
 @use "../abstract/mixin";
+
+#testimony {
+    text-align: center;
+
+    img {
+        width: 130px;
+        padding-left: 1rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+.cards_testimony_container {
+    @include mixin.flex;
+    width: 100%;
+    gap: 4rem;
+    height: 100%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    .testimony_cards {
+        @include mixin.flex;
+        background-color: white;
+        width: 45%;
+        height: 300px;
+        padding: 1.5rem;
+        
+        .testimony_elements {
+            @include mixin.flex (column, space-between, flex-start);
+            text-align: left;
+            gap: 2rem;
+            padding-left: 1.5rem;
+        }
+        
+    }
+}
