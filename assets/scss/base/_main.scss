@@ -24,7 +24,6 @@ body {
 // responsive
 .responsive_container {
     max-width: 1820px;
-    height: 80%;
 }
 ////////////////////////
 
@@ -33,10 +32,10 @@ section {
     @include mixin.flex;
 }
 
+// transition btn + socials
 a {
     transition: .3s ease;
     display: inline-block;
-    color: var.$color-nav;
 
     &:hover {
         color: var.$colorHoverH3;
@@ -44,9 +43,23 @@ a {
         ;
     }
 }
+// transition un peu plus grosse pour les liens nav
+li a {
+    transition: .3s ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+h2 {
+    font-size: 4.5rem;
+    color: var.$colorTitle;
+}
 
 h3 {
     font-size: 1.7rem;
+    color: var.$colorHoverH3;
 }
 
 span {

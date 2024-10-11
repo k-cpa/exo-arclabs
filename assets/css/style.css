@@ -22,17 +22,28 @@ header::before {
   opacity: 0.5;
   z-index: 0;
 }
+header h3 {
+  color: white;
+  transition: 0.3s ease;
+}
+header h3:hover {
+  color: rgb(218, 184, 147);
+}
 header ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+header ul a {
+  color: white;
+}
 header .btn {
   border: 1px solid white;
   padding: 20px 50px;
   background-color: transparent;
   margin-top: 3rem;
+  color: white;
 }
 header .btn:hover {
   border-color: rgb(218, 184, 147);
@@ -57,6 +68,9 @@ header nav ul {
 header nav ul li {
   margin-left: 4rem;
 }
+header nav ul li a {
+  color: white;
+}
 header nav .burger_focus .fa-bars {
   display: none;
 }
@@ -75,6 +89,7 @@ header .header_title {
 header .header_title h2 {
   font-size: 10rem;
   font-weight: 1000;
+  color: white;
 }
 header .header_title ul {
   margin-top: 3rem;
@@ -90,13 +105,15 @@ header .header_title ul li {
   align-items: center;
   height: 100%;
 }
+#cards_container h3 {
+  color: rgb(9, 9, 62);
+}
 
 .cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25%;
   height: 80%;
   gap: 2rem;
   text-align: center;
@@ -124,6 +141,17 @@ header .header_title ul li {
 #about {
   background: rgb(236, 236, 236);
 }
+#about .btn {
+  border: 1px solid rgb(218, 184, 147);
+  padding: 20px 50px;
+  background-color: transparent;
+  margin-top: 3rem;
+  color: rgb(9, 9, 62);
+}
+#about .btn:hover {
+  border-color: rgb(218, 184, 147);
+  color: rgb(218, 184, 147);
+}
 
 .company {
   display: flex;
@@ -146,6 +174,90 @@ header .header_title ul li {
   align-items: flex-start;
   width: 45%;
   height: 100%;
+  gap: 3rem;
+}
+.company .about_elements p {
+  width: 80%;
+}
+
+#project {
+  text-align: center;
+  height: 95rem;
+}
+#project .project_title {
+  margin-top: 20rem;
+}
+#project ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 6rem;
+}
+#project .project_grid_container {
+  width: 100rem;
+  height: 80rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+#project .project_grid_container .ny_top {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: red;
+  background-image: url(../IMG/p1.png);
+  background-size: cover;
+}
+#project .project_grid_container .singapore {
+  grid-column: 2/4;
+  grid-row: 1;
+  background-color: blue;
+  background-image: url(../IMG/p2.png);
+  background-size: cover;
+}
+#project .project_grid_container .paris {
+  grid-column: 1/3;
+  grid-row: 2;
+  background-image: url(../IMG/p3.png);
+  background-size: cover;
+}
+#project .project_grid_container .ny_bottom {
+  grid-column: 3;
+  grid-row: 2;
+  background-image: url(../IMG/p4.png);
+  background-size: cover;
+}
+
+.project_cards {
+  border-radius: 10px 0px 10px 10px;
+  box-shadow: -1px 5px 11px -1px rgba(0, 0, 0, 0.36);
+  position: relative;
+  overflow: hidden;
+}
+.project_cards .ny_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 33%;
+  background-color: white;
+  padding-left: 2rem;
+}
+.project_cards .project_double_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 52%;
+  background-color: white;
+  padding-left: 2rem;
+  height: 33%;
+  width: 50%;
 }
 
 @font-face {
@@ -166,7 +278,6 @@ body {
 
 .responsive_container {
   max-width: 1820px;
-  height: 80%;
 }
 
 section {
@@ -180,15 +291,27 @@ section {
 a {
   transition: 0.3s ease;
   display: inline-block;
-  color: white;
 }
 a:hover {
   color: rgb(218, 184, 147);
   transform: scale(1.1);
 }
 
+li a {
+  transition: 0.3s ease;
+}
+li a:hover {
+  transform: scale(1.2);
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: rgb(9, 9, 62);
+}
+
 h3 {
   font-size: 1.7rem;
+  color: rgb(218, 184, 147);
 }
 
 span {

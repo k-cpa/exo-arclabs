@@ -8,11 +8,14 @@
         @include mixin.flex;
         height: 100%;
     }
+
+    h3 {
+        color: var.$colorTitle
+    }
 }
 
     .cards {
         @include mixin.flex(column);
-        width: 25%;
         height: 80%;
         gap: 2rem;
         text-align: center;

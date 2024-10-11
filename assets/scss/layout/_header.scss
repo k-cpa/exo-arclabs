@@ -24,19 +24,35 @@ header {
         z-index: 0;
     }
 // disposition  générale header
+
+    h3 {
+        color: var.$color-nav;
+        transition: .3s ease;
+
+        &:hover {
+            color: var.$colorHoverH3;
+        }
+    }
+
     ul {
         @include mixin.flex;
+
+        a {
+            color: var.$color-nav
+        }
     }
 
     .btn {
         @include mixin.btn;
         margin-top: 3rem;
+        color: var.$color-nav;
 
         &:hover {
             border-color: var.$colorHoverH3;
             color: var.$colorHoverH3;
         }
     }
+
 ///////////////////////////////////
     nav {
         @include mixin.flex($justify: space-between);
@@ -46,7 +62,7 @@ header {
 
         h3 {
             font-size: 4rem;
-            padding-left: 4rem
+            padding-left: 4rem;
         }
 
         ul {
@@ -54,6 +70,10 @@ header {
 
             li {
                 margin-left: 4rem;
+                
+                a {
+                    color: var.$color-nav;
+                }
             }
         }
 
@@ -77,6 +97,7 @@ header {
         h2 {
             font-size: 10rem;
             font-weight: 1000;
+            color: var.$color-nav;
         }
 
         ul {

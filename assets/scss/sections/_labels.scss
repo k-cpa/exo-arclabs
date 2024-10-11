@@ -1,3 +1,83 @@
 @use "../abstract/keyframes";
 @use "../abstract/variable";
 @use "../abstract/mixin";
+
+
+#project {
+    text-align: center;
+    height: 95rem;
+
+    .project_title {
+        margin-top: 20rem
+    }
+    ul {
+        @include mixin.flex;
+        gap: 5rem;
+        margin-top: 6rem;
+    }
+
+    .project_grid_container {
+        width: 100rem;
+        height: 80rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 3rem;
+        margin-top: 3rem;
+
+       .ny_top {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: red;
+        background-image: url(../IMG/p1.png);
+        background-size: cover;
+       }
+
+       .singapore {
+        grid-column: 2/4;
+        grid-row: 1;
+        background-color: blue;
+        background-image: url(../IMG/p2.png);
+        background-size: cover;
+       }
+
+       .paris {
+        grid-column: 1/3;
+        grid-row: 2;
+        background-image: url(../IMG/p3.png);
+        background-size: cover;
+       }
+
+       .ny_bottom {
+        grid-column: 3;
+        grid-row: 2;
+        background-image: url(../IMG/p4.png);
+        background-size: cover;
+       }
+    }
+}
+
+.project_cards {
+    border-radius: 10px 0px 10px 10px;
+    box-shadow: -1px 5px 11px -1px rgba(0,0,0,0.36);
+    position: relative;
+    overflow: hidden;
+
+    .ny_text {
+        @include mixin.flex (column, center, flex-start);
+        height: 33%;
+        background-color: white;
+        padding-left: 2rem;
+    }
+
+    .project_double_text {
+        @include mixin.flex (column, center, flex-start);
+        position: absolute;
+        top: 0;
+        left: 52%;
+        background-color: white;
+        padding-left: 2rem;
+        height: 33%;
+        width: 50%;
+    }
+   }
