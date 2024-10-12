@@ -5,8 +5,8 @@
     align-items: $align;
 }
 
-@mixin btn ($color: white, $height:20px, $width: 50px) {
+@mixin btn ($color: white, $height:20px, $width: 50px, $bgColor: transparent) {
     border: 1px solid $color;
     padding: $height $width;
-    background-color: transparent;
+    background-color: $bgColor;
 }

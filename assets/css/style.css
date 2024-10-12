@@ -183,6 +183,10 @@ header .header_title ul li {
 #project {
   height: 120rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #project .project_title {
   margin-top: 5rem;
@@ -196,7 +200,7 @@ header .header_title ul li {
   margin-top: 6rem;
 }
 #project .project_grid_container {
-  width: 100rem;
+  width: 100%;
   height: 80rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -282,6 +286,10 @@ header .header_title ul li {
 
 #testimony {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #testimony img {
   width: 130px;
@@ -295,7 +303,7 @@ header .header_title ul li {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 4rem;
+  gap: 2rem;
   height: 100%;
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -306,7 +314,7 @@ header .header_title ul li {
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 45%;
+  width: 40%;
   height: 300px;
   padding: 1.5rem;
 }
@@ -322,6 +330,139 @@ header .header_title ul li {
 
 #labels {
   background-color: white;
+  height: 30rem;
+}
+
+.labels_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.labels_container .labels_img_wrapper {
+  width: 15%;
+}
+.labels_container .labels_img_wrapper img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 9, 62);
+  height: 50rem;
+}
+footer form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer form input {
+  background-color: rgb(38, 110, 150);
+  width: 12rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+}
+footer form input::placeholder {
+  color: rgb(160, 160, 160);
+}
+footer form a {
+  display: inline-block;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.1rem;
+  background-color: white;
+  color: rgb(88, 88, 199);
+  line-height: 3rem;
+  text-align: center;
+}
+footer #links_news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  color: white;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+footer #links_news .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  gap: 4rem;
+}
+footer #links_news .links div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 60%;
+  gap: 3rem;
+}
+footer #links_news .links div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+footer #links_news .links div ul a {
+  color: grey;
+}
+footer #links_news .newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30%;
+  height: 60%;
+  gap: 3rem;
+}
+footer #copyright_socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+footer #copyright_socials ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer #copyright_socials ul li {
+  background-color: rgb(38, 110, 150);
+  margin-left: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+footer #copyright_socials ul a {
+  color: white;
+}
+footer #copyright_socials p {
+  color: white;
+}
+footer #copyright_socials span {
+  display: inline;
+  color: rgb(218, 184, 147);
 }
 
 @font-face {
@@ -396,6 +537,57 @@ p {
 
 html {
   font-size: 62, 5%;
+}
+
+@media screen and (max-width: 1820px) {
+  .responsive_container {
+    max-width: 1720px;
+  }
+}
+@media screen and (max-width: 1720px) {
+  .responsive_container {
+    max-width: 1620px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  .responsive_container {
+    max-width: 1520px;
+  }
+}
+@media screen and (max-width: 1520px) {
+  .responsive_container {
+    max-width: 1420px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .responsive_container {
+    max-width: 1320px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .responsive_container {
+    max-width: 1220px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .responsive_container {
+    max-width: 1120px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .responsive_container {
+    max-width: 1020px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .responsive_container {
+    max-width: 920px;
+  }
+}
+@media screen and (max-width: 1670px) {
+  header .header_title h2 {
+    font-size: 9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

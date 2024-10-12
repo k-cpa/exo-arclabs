@@ -1,9 +1,32 @@
 @use "../abstract/keyframes";
-@use "../abstract/variable";
+@use "../abstract/variable" as var;
 @use "../abstract/mixin";
 
 #labels {
     background-color: white;
+    height: 30rem;
 }
 
 
+// MEMO ///
+
+// Voir si "responsive_container est pertinent.
+// peut être qu'on peut faire avec ce qu'il y a et donner la même largeur quand même. 
+// problème h3 header qui passe orange au hover !!??
+// A plus tard.
+// signé : toi d'un jour passé. 
+
+.labels_container {
+    @include mixin.flex($justify:space-around);
+    width: 100%;
+
+    .labels_img_wrapper {
+        width: 15%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+    }
+}
