@@ -6,7 +6,7 @@
 footer {
     @include mixin.flex(column);
     background-color: var.$colorTitle;
-    height: 50rem;
+    height: 45rem;
 
     form {
         @include mixin.flex;
@@ -14,10 +14,10 @@ footer {
         input {
             background-color: rgb(38, 110, 150);
             width: 12rem;
-            height: 3rem;
+            height: 4rem;
             outline: none;
             border: none;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             padding-left: 1rem;
             
             &::placeholder {
@@ -28,12 +28,12 @@ footer {
 
         a {
             display: inline-block;
-            width: 10rem;
-            height: 3rem;
-            font-size: 1.1rem;
+            width: 8rem;
+            height: 4rem;
+            font-size: 1.2rem;
             background-color: white;
             color: rgb(88, 88, 199);
-            line-height: 3rem;
+            line-height: 4rem;
             text-align: center;
         }
     }
@@ -84,6 +84,7 @@ footer {
 
         ul {
             @include mixin.flex;
+            padding-right: 5rem;
             li {
                 background-color: rgb(38, 110, 150);
                 margin-left: .5rem;
@@ -100,6 +101,7 @@ footer {
 
         p {
             color: white;
+            padding-left: 2rem;
         }
 
         span {
