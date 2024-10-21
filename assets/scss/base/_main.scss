@@ -44,12 +44,12 @@ a {
         ;
     }
 }
-// transition un peu plus grosse pour les liens nav
+
 li a {
     transition: .3s ease;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 

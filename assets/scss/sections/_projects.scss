@@ -1,5 +1,5 @@
 @use "../abstract/keyframes";
-@use "../abstract/variable";
+@use "../abstract/variable" as var;
 @use "../abstract/mixin";
 
 
@@ -11,11 +11,20 @@
     .project_title {
         margin-top: 5rem
     }
+
     ul {
         @include mixin.flex;
         gap: 5rem;
         margin-top: 6rem;
         flex-wrap: wrap;
+
+        a {
+            color: grey;
+
+            &:hover {
+                color: var.$colorHoverH3;
+            }
+        }
     }
 
     .project_grid_container {

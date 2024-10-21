@@ -63,6 +63,10 @@ footer {
                     
                     a {
                         color: grey;
+
+                        &:hover {
+                            color: var.$colorHoverH3;
+                        }
                     }
                 }
                 
@@ -96,6 +100,10 @@ footer {
 
             a {
                 color: white;
+
+                &:hover {
+                    color: var.$colorHoverH3;
+                }
             }
         }
 

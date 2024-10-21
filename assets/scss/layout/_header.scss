@@ -37,8 +37,8 @@ header {
     ul {
         @include mixin.flex;
 
-        a {
-            color: var.$color-nav
+        a: {
+            color: var.$color-nav;
         }
     }
 
@@ -105,6 +105,14 @@ header {
 
             li {
                 padding-right: 1rem;
+
+                a {
+                    color: var.$color-nav;
+
+                    &:hover {
+                        color: var.$colorHoverH3;
+                    }
+                }
             }
         }
     }
